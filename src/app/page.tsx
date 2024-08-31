@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Camera, MapPinSimple } from "@phosphor-icons/react";
+import { ArrowUpRight, Camera, MapPinSimple } from "@phosphor-icons/react";
 import Link from "next/link";
 
 const ImagePage = () => {
@@ -67,7 +67,7 @@ const ImagePage = () => {
           )}
         </AnimatePresence>
       </motion.div>
-      {/* <span className="text-[12px] font-mono font-thin text-zinc-900">created by <Link href={""}>@sahilkmr</Link></span> */}
+      <span className="text-[12px] text-[#9F9FAD] font-mono font-thin "><Link href={"https://x.com/kr_sahil/status/1829748628212367421"} className="flex items-center">support<ArrowUpRight size={10} /></Link></span>
     </div>
   );
 };
