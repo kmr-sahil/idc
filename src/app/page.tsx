@@ -2,12 +2,13 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Camera, MapPinSimple } from "@phosphor-icons/react";
+import Link from "next/link";
 
 const ImagePage = () => {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-zinc-950">
+    <div className="w-screen h-screen flex flex-col gap-[1rem] justify-center items-center bg-[#2D2727]">
       <motion.div
         onClick={() => setIsClicked(!isClicked)}
         initial={{scale: 1}}
@@ -66,6 +67,7 @@ const ImagePage = () => {
           )}
         </AnimatePresence>
       </motion.div>
+      {/* <span className="text-[12px] font-mono font-thin text-zinc-900">created by <Link href={""}>@sahilkmr</Link></span> */}
     </div>
   );
 };
